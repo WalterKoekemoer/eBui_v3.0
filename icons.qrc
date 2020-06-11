@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>Icons/Capacitor.png</file>
+        <file>Icons/Current.png</file>
+        <file>Icons/Current_Source_(Controlled).png</file>
+        <file>Icons/icons8-add-50.png</file>
+        <file>Icons/icons8-electronics-50.png</file>
+        <file>Icons/icons8-folder-50.png</file>
+        <file>Icons/icons8-heater-resistor-50.png</file>
+        <file>Icons/icons8-maintenance-50.png</file>
+        <file>Icons/icons8-play-50.png</file>
+        <file>Icons/icons8-save-50.png</file>
+        <file>Icons/icons8-wire-50.png</file>
+        <file>Icons/Inductor.png</file>
+        <file>Icons/Resistor.png</file>
+        <file>Icons/Voltage.png</file>
+        <file>Icons/Voltage_Source_(Controlled).png</file>
+    </qresource>
+</RCC>
