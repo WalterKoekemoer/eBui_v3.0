@@ -20,8 +20,16 @@ Widget::Widget(QWidget *parent) :
     this->scene = new MainScene(ui->graphicsView->parent());
     view->setScene(scene);
 
-    showMaximized();
-
+   // showMaximized();
+    QMessageBox *msg = new QMessageBox();
+    msg->information(this,"Program usage","Here folows basic instructions to use the program:\n\n"
+                                          "1.Create your component\n"
+                                          "2.Save the component to the component library\n"
+                                          "3.Locate that directory and retrieve any saved item by selecting all files when in component directory\n"
+                                          "4.Connect your components\n"
+                                          "5.Add power source\n"
+                                          "6.Simulate the circuit\n"
+                                          "7.Save your work\n");
     VScount = 0;
 
 }
