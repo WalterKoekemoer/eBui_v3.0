@@ -266,10 +266,10 @@ void AddComponent::createFile()
         {
             out.write(data_json);
             out.close();
-            QMessageBox::information(this,"Message:","saved");
+            QMessageBox::information(this,"Message:","Component Saved");
         }else
         {
-            QMessageBox::information(this,"Message:","Error, not saved");
+            QMessageBox::warning(this,"Message:","Error, Not saved");
         }
     }
 }
