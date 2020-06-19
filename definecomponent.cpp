@@ -1,6 +1,7 @@
 #include "definecomponent.h"
 #include "ui_definecomponent.h"
 #include <QDebug>
+#include <math.h>
 
 DefineComponent::DefineComponent(QList<QGraphicsItem *> components, QGraphicsItem *item) :
     ui(new Ui::DefineComponent)
