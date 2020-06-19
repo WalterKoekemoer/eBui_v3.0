@@ -15,7 +15,7 @@ DefineComponent::DefineComponent(QList<QGraphicsItem *> components, QGraphicsIte
 
     if(item->type() == QGraphicsItem::UserType + 1)
     {
-       ui->lineEdit_3->setEnabled(false);
+        ui->lineEdit_3->setEnabled(false);
     }
     else if(item->type() == QGraphicsItem::UserType + 4)
     {
@@ -248,7 +248,7 @@ void DefineComponent::on_buttonBox_accepted()
         }
     }
 }
-        /*
+/*
         if(create)
         {
             if(components.size() == 1)

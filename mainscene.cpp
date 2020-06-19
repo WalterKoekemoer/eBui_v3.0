@@ -44,7 +44,7 @@ void MainScene::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
             connectionList.push_back(Wire);
             WireA.push_back(A);
             WireB.push_back(CrntPos);
-           //connectionList.push_back(Wire->connectedComponents());
+            //connectionList.push_back(Wire->connectedComponents());
             //link->compA = connectComp->getConstName();
             //link->compB = qgraphicsitem_cast<ComponentClass*>(item)->getConstName();
             //connectionList.push_back(link);

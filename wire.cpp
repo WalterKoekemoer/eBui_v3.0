@@ -5,8 +5,7 @@ wire::wire(ComponentClass * compA, ComponentClass * compB, QPointF A, QPointF B)
     this->compA = compA;
     this->compB = compB;
     connection = compA->getConstName()+">"+compB->getConstName();
-    //connection.insert(i,compA->getConstName()+"-"+compB->getConstName());
-    //qDebug() << connection.first() << connection.last();
+
     if(compA->getRot() == 0)
     {
         if(compA->getPos().y() + 25 <= A.y())
@@ -109,8 +108,6 @@ void wire::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
         }
     }
     connection = TopBot + compA->getConstName()+">"+compB->getConstName();
-    //connection.insert(i, TopBot +compA->getConstName()+"-"+compB->getConstName());
-    //qDebug() << connection[i];
     painter->drawLine(p1,p2);
 }
 

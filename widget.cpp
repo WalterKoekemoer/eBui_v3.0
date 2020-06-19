@@ -20,9 +20,8 @@ Widget::Widget(QWidget *parent) :
     this->scene = new MainScene(ui->graphicsView->parent());
     view->setScene(scene);
 
-   // showMaximized();
     QMessageBox *msg = new QMessageBox();
-    msg->information(this,"Program usage","Here folows basic instructions to use the program:\n\n"
+    msg->information(this,"Program usage","Here follows basic instructions to use the program:\n\n"
                                           "1.Create your component\n"
                                           "2.Save the component to the component library\n"
                                           "3.Locate that directory and retrieve any saved item by selecting all files when in component directory\n"
@@ -57,9 +56,9 @@ void Widget::on_Open_clicked()
 {
     QString Jason_filter = "JSON (*.json)";
     path = QFileDialog::getOpenFileName(this,tr("Open File"),"/eBui/Components",
-                                                tr("Any file (*);;%1").arg(Jason_filter),
-                                                &Jason_filter,
-                                                QFileDialog::DontUseNativeDialog);
+                                        tr("Any file (*);;%1").arg(Jason_filter),
+                                        &Jason_filter,
+                                        QFileDialog::DontUseNativeDialog);
 
     OpenFile(path);
 
@@ -221,7 +220,7 @@ void Widget::OpenFile(QString path)
                     ComponentClass *AA = qgraphicsitem_cast<ComponentClass*>(scene->itemAt(Ax[i].toDouble(6) ,Ay[i].toDouble(6),QTransform()));
                     ComponentClass *BB = qgraphicsitem_cast<ComponentClass*>(scene->itemAt(Bx[i].toDouble(6) ,By[i].toDouble(6),QTransform()));
                     if(AA != nullptr && BB != nullptr)
-                     scene->addItem(new wire(AA,BB,QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6)),QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6))));
+                        scene->addItem(new wire(AA,BB,QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6)),QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6))));
                     else
                         qDebug() << "1" << QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6)) << "B" << QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6));
                 }
@@ -239,7 +238,7 @@ void Widget::OpenFile(QString path)
                     ComponentClass *AA = qgraphicsitem_cast<ComponentClass*>(scene->itemAt(Ax[i].toDouble(6) ,Ay[i].toDouble(6),QTransform()));
                     ComponentClass *BB = qgraphicsitem_cast<ComponentClass*>(scene->itemAt(Bx[i].toDouble(6) ,By[i].toDouble(6),QTransform()));
                     if(AA != nullptr && BB != nullptr)
-                    scene->addItem(new wire(AA,BB,QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6) + 30),QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6))));
+                        scene->addItem(new wire(AA,BB,QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6) + 30),QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6))));
                     else
                         qDebug() << "3" << QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6)) << "B" << QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6));
                 }
@@ -248,7 +247,7 @@ void Widget::OpenFile(QString path)
                     ComponentClass *AA = qgraphicsitem_cast<ComponentClass*>(scene->itemAt(Ax[i].toDouble(6) ,Ay[i].toDouble(6),QTransform()));
                     ComponentClass *BB = qgraphicsitem_cast<ComponentClass*>(scene->itemAt(Bx[i].toDouble(6) ,By[i].toDouble(6),QTransform()));
                     if(AA != nullptr && BB != nullptr)
-                    scene->addItem(new wire(AA,BB,QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6)),QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6) + 30)));
+                        scene->addItem(new wire(AA,BB,QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6)),QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6) + 30)));
                     else
                         qDebug() << "4" << QPointF(Ax[i].toDouble(6),Ay[i].toDouble(6)) << "B" << QPointF(Bx[i].toDouble(6) ,By[i].toDouble(6));
                 }

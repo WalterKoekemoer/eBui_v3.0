@@ -19,7 +19,7 @@ SubComponetsScene::~SubComponetsScene()
 
 void SubComponetsScene::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
 {
-    Q_UNUSED(event);    
+    Q_UNUSED(event);
     if(!selectedItems().isEmpty() && !addWire)
     {
         item = selectedItems().first();
@@ -41,10 +41,7 @@ void SubComponetsScene::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
             connectionList.push_back(Wire);
             WireA.push_back(A);
             WireB.push_back(CrntPos);
-           //connectionList.push_back(Wire->connectedComponents());
-            //link->compA = connectComp->getConstName();
-            //link->compB = qgraphicsitem_cast<ComponentClass*>(item)->getConstName();
-            //connectionList.push_back(link);
+
 
             connectComp = nullptr;
         }

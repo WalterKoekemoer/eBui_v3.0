@@ -5,3 +5,6 @@ object_script.eBui.Release
 mainscene.cpp.autosave
 subcomponetsscene.cpp.autosave
 *.autosave
+*debug
+*.stash
+

@@ -59,7 +59,7 @@ void AddComponent::Update()
 {
     scene->update();
     if(scene->addWire)
-    scene->CrntPos = ui->graphicsView->mapToScene(ui->graphicsView->mapFromGlobal(cursor().pos()));
+        scene->CrntPos = ui->graphicsView->mapToScene(ui->graphicsView->mapFromGlobal(cursor().pos()));
 }
 
 void AddComponent::on_pushButton_clicked(bool checked)
