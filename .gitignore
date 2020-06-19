@@ -1,2 +1,4 @@
-
+.qmake.stash
 eBui.pro.user
+object_script.eBui.Debug
+object_script.eBui.Release
